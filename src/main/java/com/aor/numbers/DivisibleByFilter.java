@@ -7,6 +7,6 @@ public class DivisibleByFilter implements GenericListFilter {
     }
     @Override
     public boolean accept(Integer number) {
-        return (number & val) == 0;
+        return (number % val) == 0;
     }
 }
